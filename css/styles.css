@@ -75,7 +75,8 @@ p,
 ul,
 a,
 img,
-button {
+button,
+input {
     margin: 0;
     padding: 0;
 }
@@ -767,4 +768,81 @@ a {
     background: var(--primary-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--secondary-black-color);
+}
+
+.form-input-container {
+    margin-bottom: 20px;
+}
+
+.form {
+    padding: 40px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-label,
+.comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
+}
+
+.form-input,
+.comment {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    padding-right: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-form-input {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-field:focus-within .form-input,
+.form-field:focus-within .svg-form-input,
+.form-field:focus-within .comment {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.comment {
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+    color: inherit;
+    margin-bottom: 0;
+}
+
+::placeholder {
+    color: rgba(117, 117, 117, 0.5);
 }
