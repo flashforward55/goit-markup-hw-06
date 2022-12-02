@@ -875,14 +875,13 @@ a {
 .svg-form-checkbox {
     width: 16px;
     height: 15px;
-    margin-right: 8.38px;
+    margin-right: 7px;
     fill: var(--primary-white-color);
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
 }
 
 .form-checkbox-input:checked+.svg-form-checkbox {
-    fill: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
