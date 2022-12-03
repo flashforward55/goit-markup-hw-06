@@ -747,6 +747,7 @@ button {
 }
 
 .modal {
+    padding: 40px;
     position: relative;
     width: 528px;
     min-height: 581px;
@@ -791,10 +792,6 @@ button {
 
 .form-input-container {
     margin-bottom: 20px;
-}
-
-.form {
-    padding: 40px;
 }
 
 .form-title {
