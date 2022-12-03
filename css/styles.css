@@ -562,7 +562,7 @@ button {
     align-items: baseline;
 }
 
-.footer-item-flex:not(:last-child) {
+.footer-item-address {
     margin-right: 70px;
 }
 
@@ -848,7 +848,8 @@ button {
 
 .form-field:focus-within .form-input,
 .form-field:focus-within .svg-form-input,
-.form-field:focus-within .comment {
+.form-field:focus-within .comment,
+.footer-subscribe-flex:focus-within .footer-eamil-subscribe {
     fill: var(--accent-color);
     border-color: var(--accent-color);
     outline: none;
@@ -937,6 +938,77 @@ button {
 
 .form-button:focus,
 .form-button:hover {
+    background-color: var(--button-active-color);
+    cursor: pointer;
+}
+
+.footer-form-subscribe {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+
+}
+
+.footer-subscribe-flex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.footer-label-subscribe {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer-eamil-subscribe {
+    padding: 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: var(--hero-overlay-color);
+    background-color: var(--footer-bg-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-eamil-subscribe::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button-subscribe {
+    padding: 10px 28px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-button-subscribe {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-left: 10px;
+}
+
+.footer-button-subscribe:hover,
+.footer-button-subscribe:focus {
     background-color: var(--button-active-color);
     cursor: pointer;
 }
