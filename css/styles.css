@@ -848,8 +848,7 @@ button {
 
 .form-field:focus-within .form-input,
 .form-field:focus-within .svg-form-input,
-.form-field:focus-within .comment,
-.footer-subscribe-flex:focus-within .footer-eamil-subscribe {
+.form-field:focus-within .comment {
     fill: var(--accent-color);
     border-color: var(--accent-color);
     outline: none;
@@ -963,7 +962,7 @@ button {
 }
 
 .footer-eamil-subscribe {
-    padding: 15px 16px;
+    padding: 16px 16px;
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -998,6 +997,10 @@ button {
     background-color: var(--accent-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-flex:focus-within .footer-eamil-subscribe {
+    outline: none;
 }
 
 .svg-button-subscribe {
